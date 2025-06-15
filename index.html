@@ -1,41 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Quiz</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dictionary App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="container">
-    <div class="left">
-      <h1>Welcome to the <br><span>Frontend Quiz!</span></h1>
-      <i>Pick a subject to get started.</i>
-    </div>
-    <div class="right">
-      <div class="top-bar">
-        <div class="toggle">
-          🌞
-          <label class="switch">
-            <input type="checkbox" id="modeToggle">
-            <span class="slider round"></span>
-          </label>
-          
-        </div>
-      </div>
+  <div class="app">
+    <header>
+      <h1>Dictionary</h1>
+      <label class="toggle">
+        <input type="checkbox" id="modeToggle" />
+        <span class="slider"></span>
+      </label>
+    </header>
 
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search a word..." />
+      <button id="searchBtn">🔍</button>
+    </div>
 
-        <div class="subjects">
-            <button class="subject"><img src="pngwing.com.png" /> HTML</button>
-            <button class="subject"><img src="pngwing.com (2).png" /> CSS</button>
-            <button class="subject"><img src="pngwing.com (1).png" /> JavaScript</button>
-            <button class="subject"><img src="accessibility.png" /> Accessibility</button>
-        </div>
-    </div>
-    </div>
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
